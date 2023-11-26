@@ -1,6 +1,135 @@
-title: Thijs Vroegh
-description: Thijs Vroegh's personal website
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
 
-remote_theme: pages-themes/midnight@v0.2.0
+# Content configuration version
+version: 2
+
+# Personal info
+name: Thijs Vroegh
+title: Research Software Engineer
+email: t.vroegh@esciencecenter.nl
+website: thijsvroegh.github.io
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+twitter_username: thijs_vroegh
+github_username:  ThijsVroegh
+#stackoverflow_username: " "
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+#instagram_username: jameswgrant
+linkedin_username: thijsvroegh
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+orcid_username: 0000-0002-6311-0798
+
+# Additional icon links
+additional_links:
+- title: NL eScience Center
+  icon: eScience(images/esciencecenter.png)
+  url: https://www.esciencecenter.nl/team/thijs-vroegh/
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/foto thijs vroegh website.jpg
+about_content: | # this will include new lines to allow paragraphs
+  I am a researcher with experience in and outside academia with degrees in Economics (MSc) and Musicology (BA, PhD). 
+  I currently work at the Netherlands eScience Center as a research software engineer where I have the opportunity to work at the intersection between academic research and cutting-edge technology. I use computational techniques that help researchers from the social sciences
+  and humanities to enable them to make use of the power of software and data science. This includes <mark>Natural Language Processing</mark>, Machine Learning, and <mark>'Network Analysis</mark>.
+
+  - Further refining research problems
+  - Requirements analysis and software design
+  - Software development using high-quality standards
+  - Using <mark>Python</mark> and <mark>R</mark>
+  - Inter-disciplinary research and technology development
+    
+content:
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Netherlands eScience Center <img src="images/esciencecenter.png" alt="eScience Center Logo" height=30 title="NL eScience Center">
+        link: www.esciencecenter.nl
+        # link_text: boringcompany.com
+        sub_title: Research Software Engineer
+        caption: February 2023 - Present
+        quote: >
+          Academic research, powered by pioneering software
+        description: | # this will include new lines to allow paragraphs
+          The Netherlands eScience Center (NLeSC) is a research institute that aims to accelerate scientific discovery by developing and applying
+          innovative methods, tools, and infrastructure. It provides expertise in areas such as high-performance computing, big data, data management,
+          visualization, machine learning, and scientific workflows. Instead of monetary funding, the NLeSC provides in-kind support by Research 
+          Software Engineers.
+                    
+          I am currently working on the following research projects:
+            - [Historiographing the Era of the American Revolution](https://research-software-directory.org/projects/h-gear):
+            development and application of <mark>shifting concepts in time (shico) </mark> anfd <mark>temporal social network analysis</mark>, 
+            - [Decoding Raphael](https://research-software-directory.org/projects/renaissance):
+            development and application of Computer Vison Techniques to compare paintings, i.e., the original and its copies.
+
+          I also help with teaching the [good-practices-in-research-software-development course](https://www.esciencecenter.nl/event/good-practices-in-research-software-development//) and the [R package development course] (https://www.esciencecenter.nl/event/reproducible-research-with-r-packages-3/).
+          
+      - layout: left
+        title: 
+        link: www.aesthetics.mpg.de
+        link_text: Max Planck Institute for empirical aesthetics (MPI)
+        sub_title: Visiting Researcher
+        caption: Janaury 2020 - July 2023
+        quote: >
+          Academic Researcher
+
+        description: | # this will include new lines to allow paragraphs
+          As a researcher, I was working on, among others:
+
+          - Develop a questionnaire aimed at measuring various aspects of aesthetic experience
+          - Use network science to model the experience of flow while performing music
+          - Apply a temporal network approach to mind wandering while listening to music
+
+
+      - layout: left
+        title: 
+        link: https://www.researchned.nl/
+        link_text: Researchned
+        sub_title: Researcher
+        caption: 2020 - 2021
+        quote: >
+         Specialising in social-scientific research, policy advice, and knowledge transfer in the overall field of education.
+
+        description: | # this will include new lines to allow paragraphs
+          Commissioned by agencies such as the Dutch Ministry of Education, Culture and Science and allied public bodies and foundations, I was part of   
+          a research team working on policy areas such as student satisfaction, student drop-out and early school leaving, incoming students and degree  
+          choice, and quality, structure and organisation of the educational process. 
+          Tasks and activities included:
+
+          - Statistical support for 10+ research projects on survey- and registerdata issued by government and educational institutes
+          - Survey programming and development (SPSS Dimensions)
+
+
+# Footer
+footer_show_references: false
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+ - jekyll-seo-tag
