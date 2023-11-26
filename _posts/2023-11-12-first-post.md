@@ -2,4 +2,4 @@
 layout: post
 author: ThijsVroegh
 ---
-My veryfirst blog is really short, isn't it?
+My very first blog is really short, isn't it?
